@@ -393,13 +393,13 @@ globals()['tables'] = {
     },
 }
 
-tables['kode_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_provinsi"]["name"]}', conn)
-tables['kode_pulau']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pulau"]["name"]}', conn)
-tables['kode_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_industri"]["name"]}', conn)
-tables['kode_lapus']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_lapus"]["name"]}', conn)
-tables['kode_konsumsi_akhir']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_konsumsi_akhir"]["name"]}', conn)
-tables['kode_pendapatan']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pendapatan"]["name"]}', conn)
-tables['rel_lapus_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_lapus_industri"]["name"]}', conn)
-tables['rel_pulau_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_pulau_provinsi"]["name"]}', conn)
+# tables['kode_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_provinsi"]["name"]}', conn)
+# tables['kode_pulau']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pulau"]["name"]}', conn)
+# tables['kode_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_industri"]["name"]}', conn)
+# tables['kode_lapus']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_lapus"]["name"]}', conn)
+# tables['kode_konsumsi_akhir']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_konsumsi_akhir"]["name"]}', conn)
+# tables['kode_pendapatan']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pendapatan"]["name"]}', conn)
+# tables['rel_lapus_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_lapus_industri"]["name"]}', conn)
+# tables['rel_pulau_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_pulau_provinsi"]["name"]}', conn)
 
 conn.close()
