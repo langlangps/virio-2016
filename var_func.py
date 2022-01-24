@@ -64,8 +64,8 @@ globals()['tables'] = {
             'nama':'nama'
         }
     },
-    'kode_konsumsi_akhir':{
-        'name':'kode_konsumsi_akhir',
+    'kode_pengeluaran':{
+        'name':'kode_pengeluaran',
         'attr':{
             'kode':'kode',
             'nama':'nama'
@@ -251,9 +251,9 @@ globals()['tables'] = {
         'name':'ki_provinsi_lapus',
         'attr':{
             'provinsi_penyedia':'provinsi_penyedia',
-            'lapus_penyedia':'lapangan_usaha_penyedia',
+            'lapus_penyedia':'lapus_penyedia',
             'provinsi_pengguna':'provinsi_pengguna',
-            'lapus_pengguna':'lapangan_usaha_pengguna',
+            'lapus_pengguna':'lapus_pengguna',
             'nilai':'nilai'
         }
     },
@@ -281,9 +281,9 @@ globals()['tables'] = {
         'name':'ki_pulau_lapus',
         'attr':{
             'pulau_penyedia':'pulau_penyedia',
-            'lapus_penyedia':'lapangan_usaha_penyedia',
+            'lapus_penyedia':'lapus_penyedia',
             'pulau_pengguna':'pulau_pengguna',
-            'lapus_pengguna':'lapangan_usaha_pengguna',
+            'lapus_pengguna':'lapus_pengguna',
             'nilai':'nilai'
         }
     },
@@ -298,8 +298,8 @@ globals()['tables'] = {
     'ki_lapus':{
         'name':'ki_lapus',
         'attr':{
-            'lapus_penyedia':'lapangan_usaha_penyedia',
-            'lapus_pengguna':'lapangan_usaha_pengguna',
+            'lapus_penyedia':'lapus_penyedia',
+            'lapus_pengguna':'lapus_pengguna',
             'nilai':'nilai'
         }
     },
@@ -323,9 +323,9 @@ globals()['tables'] = {
         'name':'ko_provinsi_lapus',
         'attr':{
             'provinsi_penyedia':'provinsi_penyedia',
-            'lapus_penyedia':'lapangan_usaha_penyedia',
+            'lapus_penyedia':'lapus_penyedia',
             'provinsi_pengguna':'provinsi_pengguna',
-            'lapus_pengguna':'lapangan_usaha_pengguna',
+            'lapus_pengguna':'lapus_pengguna',
             'nilai':'nilai'
         }
     },
@@ -353,9 +353,9 @@ globals()['tables'] = {
         'name':'ko_pulau_lapus',
         'attr':{
             'pulau_penyedia':'pulau_penyedia',
-            'lapus_penyedia':'lapangan_usaha_penyedia',
+            'lapus_penyedia':'lapus_penyedia',
             'pulau_pengguna':'pulau_pengguna',
-            'lapus_pengguna':'lapangan_usaha_pengguna',
+            'lapus_pengguna':'lapus_pengguna',
             'nilai':'nilai'
         }
     },
@@ -370,8 +370,8 @@ globals()['tables'] = {
     'ko_lapus':{
         'name':'ko_lapus',
         'attr':{
-            'lapus_penyedia':'lapangan_usaha_penyedia',
-            'lapus_pengguna':'lapangan_usaha_pengguna',
+            'lapus_penyedia':'lapus_penyedia',
+            'lapus_pengguna':'lapus_pengguna',
             'nilai':'nilai'
         }
     },
@@ -393,13 +393,13 @@ globals()['tables'] = {
     },
 }
 
-# tables['kode_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_provinsi"]["name"]}', conn)
-# tables['kode_pulau']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pulau"]["name"]}', conn)
-# tables['kode_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_industri"]["name"]}', conn)
-# tables['kode_lapus']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_lapus"]["name"]}', conn)
-# tables['kode_konsumsi_akhir']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_konsumsi_akhir"]["name"]}', conn)
-# tables['kode_pendapatan']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pendapatan"]["name"]}', conn)
-# tables['rel_lapus_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_lapus_industri"]["name"]}', conn)
-# tables['rel_pulau_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_pulau_provinsi"]["name"]}', conn)
+tables['kode_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_provinsi"]["name"]}', conn)
+tables['kode_pulau']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pulau"]["name"]}', conn)
+tables['kode_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_industri"]["name"]}', conn)
+tables['kode_lapus']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_lapus"]["name"]}', conn)
+tables['kode_pengeluaran']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pengeluaran"]["name"]}', conn)
+tables['kode_pendapatan']['data'] = pd.read_sql(f'SELECT * FROM {tables["kode_pendapatan"]["name"]}', conn)
+tables['rel_lapus_industri']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_lapus_industri"]["name"]}', conn)
+tables['rel_pulau_provinsi']['data'] = pd.read_sql(f'SELECT * FROM {tables["rel_pulau_provinsi"]["name"]}', conn)
 
 conn.close()
